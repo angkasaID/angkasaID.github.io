@@ -21,14 +21,8 @@ footer .fab:hover {
     color: #4c51bf; /* Indigox color for hover effect */
 }
     /* Mobile Specific Adjustments */
-    @media (max-width: 768px) {
 nav {
             border-radius: 30px; /* Rounded corners */
             
             top: 20px; /* Floating effect */
-            
-            width: 95%; /* Adjust width to avoid touching screen edges */
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Shadow for floating effect */
-            z-index: 999;
 }
-    }
