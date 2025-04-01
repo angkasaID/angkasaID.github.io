@@ -1,117 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap');
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
-}
-:root {
-	--gradient1: -webkit-linear-gradient(to right, #267871, #136a8a);  /* Chrome 10-25, Safari 5.1-6 */
-	--gradient2: linear-gradient(to right, #267871, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* Custom CSS for Parallax Effect */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
-.color1 {color: #002e43;}
-.color2 {color: #00465d;}
-.color3 {color: #00697d;}
-.color4 {color: #0098a3;}
-.color5 {color: #00d4ca;}
-
-@keyframes gradient {
-	0% {
-		background-position: left;
-	}
-	100% {
-		background-position: right;
-	}
+/* Add transition effect for links in footer */
+footer a {
+    transition: all 0.3s ease;
 }
 
-
-.container{
-	width: 100%;
-	min-height: 100vh;
-    background: #002e43;
-	background-size: 200%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+/* Add hover effect for social icons */
+footer .fab {
+    transition: color 0.3s ease;
 }
 
-.profile-box{
-	background-color: #00697d;
-	text-align: center;
-	padding: 40px 90px;
-	color: #fff;
-	position: relative;
-	border-radius: 20px;
-	margin-left: 10px;
-	margin-right: 10px;
+footer .fab:hover {
+    color: #4c51bf; /* Indigox color for hover effect */
 }
-
-.menu-icon{
-	width: 25px;
-	position: absolute;
-	left: 40px;
-	top: 40px;
-}
-.setting-icon{
-	width: 25px;
-	position: absolute;
-	right: 40px;
-	top: 40px;
-}
-
-.profile-pic{
-	width: 150px;
-	border-radius: 50%;
-	background: #fff;
-	padding: 6px;
-	margin-top: 40px;
-}
-
-.profile-button{
-	background: #0098a3;
-	color: #fff;
-	padding: 60px 0px;
-	margin-right: -90px;
-	margin-left: -90px;
-	margin-bottom: -40px;
-	border-radius: 20px;
-	margin-top: -10px;
-}
-
-.profile-button img{
-	width: 20px;
-	margin-top: 15px;
-	cursor: pointer;
-}
-
-.profile-box button{
-	background: #00d4ca;
-	color: #fff;
-	border: none;
-	outline: none;
-	box-shadow: 0 5px 10px rgba(244, 67, 54, 0.54);
-	padding: 15px 60px;
-	cursor: pointer;
-	border-radius: 30px;
-	margin-bottom: -50px;
-	font-weight: 600;
-	font-size: 16px;
-}
-
-.profile-box h3{
-	font-size: 22px;
-	margin-top: 20px;
-	font-weight: 500;
-}
-
-.social img{
-	width: 20px;
-	margin: 30px 5px;
-	cursor: pointer;
-}
-
-
-
-
-
