@@ -1,36 +1,199 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Profile Card</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page with Parallax</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 </head>
-<body>
-		<div class="container">
-			<div class="profile-box">
-				<img src="images/menu.png" class="menu-icon" alt="">
-				<img src="images/setting.png" class="setting-icon" alt="">
-				<img src="images/profile-pic.jpg" class="profile-pic" alt="">
-				<h3>Yoga Saputra</h3>
-				<p>Hanya manusia biasa<br>yang suka tentang dunia Teknologi</p>
-				
-				<div class="social">
-					<a href="https://www.instagram.com/sphc__"><img src="images/instagram.png" alt=""></a>
-					<a href="t.me/angkasa_id"><img src="images/telegram.png" alt=""></a>
-					<img src="images/dribble.png" alt="">
-				</div>
-				<button type="button">Follow</button>
-				<div class="profile-button">
-					<p>Learn More About Me</p>
-					<img src="images/arrow.png" alt="">
-				</div>
-			</div>
-		</div>
 
+<body class="bg-gray-900 text-white">
 
+    <!-- Navbar (Sticky) -->
+    <nav class="bg-gray-800 w-full shadow-lg sticky top-0 z-50">
+        <div class="max-w-screen-xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a class="navbar-brand text-2xl font-semibold text-indigo-500" href="#">Finale</a>
+                <!-- Normal Navbar links for Desktop -->
+                <div class="space-x-8 hidden md:flex">
+                    <a href="#about" class="text-lg hover:text-indigo-500">About</a>
+                    <a href="#products" class="text-lg hover:text-indigo-500">Products</a>
+                    <a href="#testimonials" class="text-lg hover:text-indigo-500">Testimonials</a>
+                </div>
 
+                <!-- Hamburger Menu for Mobile -->
+                <div class="md:hidden">
+                    <button id="hamburger-icon" class="text-white text-xl">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu" class="md:hidden w-full bg-gray-800 py-4 px-6 hidden z-40 relative top-full left-0">
+        <a href="#about" class="block px-4 py-2 text-lg text-white hover:text-indigo-500">About</a>
+        <a href="#products" class="block px-4 py-2 text-lg text-white hover:text-indigo-500">Products</a>
+        <a href="#testimonials" class="block px-4 py-2 text-lg text-white hover:text-indigo-500">Testimonials</a>
+    </div>
 
-<div id="bg"></div>
+    <!-- Hero Section (Parallax Effect) -->
+    <section id="hero" class="parallax" style="background-image: url('https://placehold.co/1200x800');">
+        <div class="bg-black bg-opacity-50 w-full h-full flex justify-center items-center">
+            <div class="text-white text-center px-8 py-16 max-w-3xl">
+                <h1 class="text-5xl font-bold mb-4">Welcome to Our Clothing Brand</h1>
+                <p class="text-xl mb-8">Discover stylish, comfortable, and affordable fashion for everyone. Look good, feel good.</p>
+                <a href="#products" class="bg-indigo-500 hover:bg-indigo-600 text-white py-3 px-6 rounded-lg text-lg">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-8 bg-gray-800">
+        <div class="max-w-screen-xl mx-auto text-center">
+            <h2 class="text-4xl font-semibold text-indigo-500 mb-4">About Us</h2>
+            <p class="text-lg mb-8">We are passionate about fashion, offering a range of high-quality, stylish, and affordable clothing for all occasions. Our goal is to help you feel confident and comfortable every day.</p>
+            <a href="#products" class="bg-indigo-500 hover:bg-indigo-600 text-white py-3 px-6 rounded-lg text-lg">Explore Our Products</a>
+        </div>
+    </section>
+
+    <!-- Product Highlight Section -->
+    <section id="products" class="py-16 px-8 bg-gray-900">
+        <div class="max-w-screen-xl mx-auto text-center">
+            <h2 class="text-4xl font-semibold text-indigo-500 mb-8">Featured Products</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- Product 1 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <img src="https://placehold.co/400x300" alt="Product 1" class="w-full rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Stylish Jacket</h3>
+                    <p class="text-lg mb-4">Perfect for all occasions, offering both warmth and style.</p>
+                    <a href="#" class="bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded-lg">View Product</a>
+                </div>
+                <!-- Product 2 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <img src="https://placehold.co/400x300" alt="Product 2" class="w-full rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Comfy T-Shirt</h3>
+                    <p class="text-lg mb-4">Soft and breathable, perfect for any casual occasion.</p>
+                    <a href="#" class="bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded-lg">View Product</a>
+                </div>
+                <!-- Product 3 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <img src="https://placehold.co/400x300" alt="Product 3" class="w-full rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Modern Jeans</h3>
+                    <p class="text-lg mb-4">Trendy, comfortable, and the perfect fit for any occasion.</p>
+                    <a href="#" class="bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded-lg">View Product</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonials" class="py-16 px-8 bg-gray-800">
+        <div class="max-w-screen-xl mx-auto text-center">
+            <h2 class="text-4xl font-semibold text-indigo-500 mb-8">What Our Customers Say</h2>
+            <div class="flex flex-wrap justify-center gap-8">
+                <div class="bg-gray-700 p-8 rounded-lg shadow-lg w-72">
+                    <p class="text-lg mb-4">"I absolutely love the quality of the clothing. The fit is perfect, and the materials feel so comfortable. Highly recommend!"</p>
+                    <h5 class="text-xl font-semibold text-indigo-500">Sarah M.</h5>
+                </div>
+                <div class="bg-gray-700 p-8 rounded-lg shadow-lg w-72">
+                    <p class="text-lg mb-4">"The customer service is amazing and the clothes are stylish and affordable. I'll definitely be back!"</p>
+                    <h5 class="text-xl font-semibold text-indigo-500">John D.</h5>
+                </div>
+                <div class="bg-gray-700 p-8 rounded-lg shadow-lg w-72">
+                    <p class="text-lg mb-4">"The perfect place to shop for quality clothing. The variety is great, and I always find something I love!"</p>
+                    <h5 class="text-xl font-semibold text-indigo-500">Emma R.</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer class="bg-gradient-to-t from-gray-900 via-gray-800 to-gray-700 text-white py-16">
+    <div class="max-w-screen-xl mx-auto px-6">
+        <!-- Useful Links Section -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-10 animate__animated animate__fadeIn">
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-indigo-500">Useful Links</h3>
+                <ul>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">About Us</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Contact</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-indigo-500">Customer Service</h3>
+                <ul>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Support</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Returns</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Shipping</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-indigo-500">Connect with Us</h3>
+                <ul>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Facebook</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Twitter</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Instagram</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-indigo-500">Subscribe to Our Newsletter</h3>
+                <form action="#" method="POST">
+                    <input type="email" placeholder="Enter your email"
+                        class="w-full p-3 rounded bg-gray-700 text-white mb-4 transition-all focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    <button type="submit"
+                        class="w-full py-3 rounded bg-indigo-500 hover:bg-indigo-600 text-white font-semibold transition-all">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Social Media Icons Section -->
+        <div class="flex justify-center space-x-8 mb-10 animate__animated animate__fadeIn animate__delay-1s">
+            <a href="#" class="text-gray-400 hover:text-indigo-500 text-2xl transition-all">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-indigo-500 text-2xl transition-all">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-indigo-500 text-2xl transition-all">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-indigo-500 text-2xl transition-all">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="text-center text-gray-500 animate__animated animate__fadeIn animate__delay-2s">
+            <p>&copy; 2025 Your Brand. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        hamburgerIcon.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
 </body>
+
 </html>
