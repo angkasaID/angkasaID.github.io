@@ -24,10 +24,10 @@ footer .fab:hover {
     @media (max-width: 768px) {
 nav {
             border-radius: 30px; /* Rounded corners */
-            position: fixed;
+            
             top: 20px; /* Floating effect */
-            transform: translateX(-50%);
-            width: 90%; /* Adjust width to avoid touching screen edges */
+            
+            width: 95%; /* Adjust width to avoid touching screen edges */
             box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Shadow for floating effect */
             z-index: 999;
 }
