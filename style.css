@@ -20,3 +20,6 @@ footer .fab {
 footer .fab:hover {
     color: #4c51bf; /* Indigox color for hover effect */
 }
+nav {
+    border-radius: 20px;
+}
