@@ -9,6 +9,7 @@
     height: 100vh;
 }
 
+
 /* Add transition effect for links in footer */
 footer a {
     transition: all 0.3s ease;
@@ -53,4 +54,20 @@ nav{
     transform: translateX(-50%);
     position:fixed;
 
+}
+
+/* CSS Code */
+.swiper-wrapper {
+width: 100%;
+height: max-content !important;
+padding-bottom: 64px !important;
+-webkit-transition-timing-function: linear !important;
+transition-timing-function: linear !important;
+position: relative;
+}
+.swiper-pagination-bullet {
+background: #4F46E5;
+}
+.swiper-pagination-bullet-active {
+background: #4F46E5 !important;
 }
