@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -14,14 +14,14 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-900 text-white">
+<body class="bg-neutral-200 dark:bg-gray-800 text-white">
 
 
     <!-- Navbar (Sticky) -->
-    <nav class="bg-white dark:bg-slate-900 shadow-lg  z-50">
+    <nav class="bg-white dark:bg-gray-900 shadow-lg shadow-slate-500/50 z-50">
         <div class="max-w-screen-xl mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
-                <a class="navbar-brand text-2xl font-semibold text-indigo-500" href="#"><img src="https://img.logoipsum.com/311.svg" alt="logo" width="100" class="dark:invert"> </a>
+                <a class="navbar-brand text-2xl font-semibold text-indigo-500" href="#"><img src="Asset/logo.svg" alt="logo" width="100" class="dark:invert dark:filter"> </a>
 
                 <!-- Normal Navbar links for Desktop -->
                 <div class="space-x-8 hidden md:flex dark:text-white text-gray-800">
@@ -32,7 +32,7 @@
 
                 <!-- Hamburger Menu for Mobile -->
                 <div class="md:hidden">
-                    <button id="hamburger-icon" class="text-gray-800 dark:text-white text-xl">
+                    <button id="hamburger-icon" class="animate-bounce text-gray-800 dark:text-white text-xl">
                         <i class="fas fa-hamburger"></i>
                     </button>
                 </div>
@@ -53,7 +53,7 @@
             <div class="text-white text-center px-8 py-16 max-w-3xl">
                 <h1 class="text-5xl font-bold mb-4">Welcome to Finale Project</h1>
                 <p class="text-xl mb-8">Discover stylish, comfortable, and affordable fashion for any activity <br> less price, More Quality.</p>
-                <a href="#products" class="bg-blue-600 dark:bg-indigo-500 hover:bg-blue-800 dark:hover:bg-indigo-600 text-white py-3 px-6 rounded-lg text-lg">Shop Now</a>
+                <a href="#products" class="animate-pulse bg-blue-600 dark:bg-indigo-500 hover:bg-blue-800 dark:hover:bg-indigo-600 text-white py-3 px-6 rounded-xl text-lg shadow-lg shadow-blue-500">SHOP NOW!</a>
             </div>
         </div>
     </section>
@@ -63,7 +63,7 @@
         <div class="max-w-screen-xl mx-auto text-center">
             <h2 class="text-4xl font-semibold text-gray-800 dark:text-indigo-500 mb-4">About Us</h2>
             <p class="text-lg text-gray-800 dark:text-white mb-8">We are passionate about fashion, offering a range of high-quality, stylish, and affordable clothing for all occasions. Our goal is to help you feel confident and comfortable every day.</p>
-            <a href="#products" class="bg-blue-600 dark:bg-indigo-500 hover:bg-blue-800 dark:hover:bg-indigo-600 text-white py-3 px-6 rounded-lg text-lg">Explore Our Products</a>
+            <a href="#products" class="bg-blue-600 dark:bg-indigo-500 hover:bg-blue-800 dark:hover:bg-indigo-600 text-white py-3 px-6 rounded-xl text-lg ">Explore Our Products</a>
         </div>
     </section>
 
@@ -73,16 +73,26 @@
             <h2 class="text-4xl font-semibold text-gray-800 dark:text-indigo-500 mb-8">Featured Products</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
                 <!-- Product 1 -->
-                <div class="bg-neutral-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <img src="https://placehold.co/400x300" alt="Product 1" class="w-full rounded-lg mb-4">
-                    <h3 class="text-gray-800 dark:text-white text-2xl font-semibold mb-2">Stylish Jacket</h3>
+                <div class="bg-neutral-100 dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+                    <img src="https://placehold.co/400x300" alt="Product 1" class="w-full rounded-xl mb-4">
+                    <h3 class="text-gray-800 dark:text-white text-2xl font-semibold mb-2">Jersey Printing</h3>
                     <p class="text-gray-800 dark:text-white text-lg mb-4">Perfect for all occasions, offering both warmth and style.</p>
-                    <a href="#" class="bg-blue-600 dark:bg-indigo-500 hover:bg-blue-800 dark:hover:bg-indigo-600 text-white py-3 px-4 rounded-lg text-lg">View Product</a>
+                    <a href="#" class="bg-blue-600 dark:bg-indigo-500 hover:bg-blue-800 dark:hover:bg-indigo-600 text-white py-3 px-4 rounded-xl text-lg duration-300 ease-out">View Product</a>
                 </div>
                 <!-- Product 2 -->
-                
+                 <div class="bg-neutral-100 dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+                    <img src="https://placehold.co/400x300" alt="Product 1" class="w-full rounded-xl mb-4">
+                    <h3 class="text-gray-800 dark:text-white text-2xl font-semibold mb-2">Custom T-shirt</h3>
+                    <p class="text-gray-800 dark:text-white text-lg mb-4">Perfect for all occasions, offering both warmth and style.</p>
+                    <a href="#" class="bg-blue-600 dark:bg-indigo-500 hover:bg-blue-800 dark:hover:bg-indigo-600 text-white py-3 px-4 rounded-xl text-lg duration-300 ease-out">View Product</a>
+                </div>               
                 <!-- Product 3 -->
-                
+                 <div class="bg-neutral-100 dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+                    <img src="https://placehold.co/400x300" alt="Product 1" class="w-full rounded-xl mb-4">
+                    <h3 class="text-gray-800 dark:text-white text-2xl font-semibold mb-2">T-shirt</h3>
+                    <p class="text-gray-800 dark:text-white text-lg mb-4">Perfect for all occasions, offering both warmth and style.</p>
+                    <a href="#" class="bg-blue-600 dark:bg-indigo-500 hover:bg-blue-800 dark:hover:bg-indigo-600 text-white py-3 px-4 rounded-xl text-lg duration-300 ease-out">View Product</a>
+                </div>               
             </div>
         </div>
     </section>
@@ -92,15 +102,15 @@
         <div class="max-w-screen-xl mx-auto text-center">
             <h2 class="text-4xl font-semibold text-gray-800 dark:text-indigo-500 mb-8">What Our Customers Say</h2>
             <div class="flex flex-wrap justify-center gap-8">
-                <div class="bg-neutral-100 dark:bg-gray-700 p-8 rounded-lg shadow-lg w-72">
+                <div class="bg-neutral-100 dark:bg-gray-700 p-8 rounded-xl shadow-lg w-72">
                     <p class="text-lg mb-4 text-gray-800 dark:text-white">"I absolutely love the quality of the clothing. The fit is perfect, and the materials feel so comfortable. Highly recommend!"</p>
                     <h5 class="text-xl font-semibold text-blue-500">Joko Susanto</h5>
                 </div>
-                <div class="bg-neutral-100 dark:bg-gray-700 p-8 rounded-lg shadow-lg w-72">
+                <div class="bg-neutral-100 dark:bg-gray-700 p-8 rounded-xl shadow-lg w-72">
                     <p class="text-lg mb-4 text-gray-800 dark:text-white">"I absolutely love the quality of the clothing. The fit is perfect, and the materials feel so comfortable. Highly recommend!"</p>
                     <h5 class="text-xl font-semibold text-blue-500">Prabroro</h5>
                 </div>
-                <div class="bg-neutral-100 dark:bg-gray-700 p-8 rounded-lg shadow-lg w-72">
+                <div class="bg-neutral-100 dark:bg-gray-700 p-8 rounded-xl shadow-lg w-72">
                     <p class="text-lg mb-4 text-gray-800 dark:text-white">"I absolutely love the quality of the clothing. The fit is perfect, and the materials feel so comfortable. Highly recommend!"</p>
                     <h5 class="text-xl font-semibold text-blue-500">Mulyono</h5>
                 </div>
@@ -110,47 +120,25 @@
     </section>
 
 <!-- Footer -->
-<footer class="bg-gradient-to-t from-gray-900 via-gray-800 to-gray-700 text-white py-16">
+<footer class="bg-gradient-to-t from-gray-900 via-gray-800 to-gray-700 text-white py-16 rounded-t-2xl" r>
     <div class="max-w-screen-xl mx-auto px-6">
         <!-- Useful Links Section -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-10 animate__animated animate__fadeIn">
-            <div>
-                <h3 class="text-lg font-semibold mb-4 text-indigo-500">Useful Links</h3>
-                <ul>
-                    <li><a href="#" class="hover:text-indigo-400 transition-colors">About Us</a></li>
-                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Contact</a></li>
-                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Privacy Policy</a></li>
-                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Terms of Service</a></li>
-                </ul>
-            </div>
+        <div class=" flex justify-center items-center space-x-20 mb-10 animate__animated animate__fadeIn animate__delay-1s">
             <div>
                 <h3 class="text-lg font-semibold mb-4 text-indigo-500">Customer Service</h3>
                 <ul>
                     <li><a href="#" class="hover:text-indigo-400 transition-colors">Support</a></li>
-                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Returns</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Design</a></li>
                     <li><a href="#" class="hover:text-indigo-400 transition-colors">Shipping</a></li>
-                    <li><a href="#" class="hover:text-indigo-400 transition-colors">FAQ</a></li>
                 </ul>
             </div>
             <div>
                 <h3 class="text-lg font-semibold mb-4 text-indigo-500">Connect with Us</h3>
                 <ul>
                     <li><a href="#" class="hover:text-indigo-400 transition-colors">Facebook</a></li>
-                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Twitter</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Whatsapp</a></li>
                     <li><a href="#" class="hover:text-indigo-400 transition-colors">Instagram</a></li>
-                    <li><a href="#" class="hover:text-indigo-400 transition-colors">LinkedIn</a></li>
                 </ul>
-            </div>
-            <div>
-                <h3 class="text-lg font-semibold mb-4 text-indigo-500">Subscribe to Our Newsletter</h3>
-                <form action="#" method="POST">
-                    <input type="email" placeholder="Enter your email"
-                        class="w-full p-3 rounded bg-gray-700 text-white mb-4 transition-all focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                    <button type="submit"
-                        class="w-full py-3 rounded bg-indigo-500 hover:bg-indigo-600 text-white font-semibold transition-all">
-                        Subscribe
-                    </button>
-                </form>
             </div>
         </div>
 
@@ -160,13 +148,13 @@
                 <i class="fab fa-facebook-f"></i>
             </a>
             <a href="#" class="text-gray-400 hover:text-indigo-500 text-2xl transition-all">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-indigo-500 text-2xl transition-all">
                 <i class="fab fa-instagram"></i>
             </a>
             <a href="#" class="text-gray-400 hover:text-indigo-500 text-2xl transition-all">
-                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-indigo-500 text-2xl transition-all">
+                <i class="fab fa-twitter"></i>
             </a>
         </div>
 
